@@ -6,25 +6,25 @@ SET QUOTED_IDENTIFIER ON
 GO
 ALTER PROCEDURE [dbo].[GetForecastActivities]
  (
-		@activityId INT = 0, 
+	@activityId INT = 0, 
         @status VARCHAR(50) = NULL, 
         @priority VARCHAR(50) = NULL, 
         @fromQtr INT = 1, 
         @fromYear INT = 1, 
         @throughQtr INT = 4, 
         @throughYear INT = 9999, 
-		@host VARCHAR(50) = NULL, 
-		@hostSite VARCHAR(50) = NULL, 
-		@critical CHAR = NULL, 
-		@product VARCHAR(50) = NULL, 
-		@activityType VARCHAR(50) = NULL, 
-		@activityLevel VARCHAR(50) = NULL,
+	@host VARCHAR(50) = NULL, 
+	@hostSite VARCHAR(50) = NULL, 
+	@critical CHAR = NULL, 
+	@product VARCHAR(50) = NULL, 
+	@activityType VARCHAR(50) = NULL, 
+	@activityLevel VARCHAR(50) = NULL,
         @cooperative VARCHAR(1) = NULL, 
-		@department VARCHAR(50) = NULL, 
-		@unit VARCHAR(50) = NULL, 
-		@region VARCHAR(50) = NULL, 
-		@leader VARCHAR(50) = NULL,
-		@member VARCHAR(50) = NULL
+	@department VARCHAR(50) = NULL, 
+	@unit VARCHAR(50) = NULL, 
+	@region VARCHAR(50) = NULL, 
+	@leader VARCHAR(50) = NULL,
+	@member VARCHAR(50) = NULL
 )
 AS
 -- =============================================
